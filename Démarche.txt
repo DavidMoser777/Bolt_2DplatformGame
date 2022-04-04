@@ -1,0 +1,19 @@
+Démarche
+
+1. Ajouter des plateforme sur le level 1.
+
+2. Ajouter l'image de la pomme et de l'abeille en tant qu'asset.
+
+3. Placer la pomme sur une platforme du level 1
+
+4. Faire en sorte que la pomme disparaisse quand elle est en collision avec le player: onCollisionWith
+
+5. Faire en sorte que l'abeille aparaisse quand la pomme disparait, dans une position de y=4 et x = aléatoire entre 10 et -10 et qu'elle ait une vitesse constante
+
+6. Faire en sorte que l'abeille suive le player: même code qu'avec les ennemies et que si elle le touche, le player meure: appeler la variable death
+
+7. Faire en sorte que l'abeille ait une durée de vie de 10 secondes: Timer
+
+
+
+
