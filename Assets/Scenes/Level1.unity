@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 945846628}
   - component: {fileID: 945846627}
   - component: {fileID: 945846626}
+  - component: {fileID: 945846630}
   m_Layer: 0
   m_Name: apple
   m_TagString: Untagged
@@ -518,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":259.8332,"y":12.55016},"zoom":0.5999999,"elements":[{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"tag":{"$content":"Player","$type":"System.String"}},"position":{"x":-63.0,"y":-104.0},"guid":"f167ca6b-9f24-45b3-80b1-d722d92cb46c","$version":"A","$type":"Bolt.SuperUnit","$id":"10"},{"chainable":false,"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":null},"position":{"x":364.0,"y":-83.0},"guid":"d01cdddb-335a-442e-aef0-ae017262f863","$version":"A","$type":"Bolt.InvokeMember","$id":"13"},{"defaultValues":{},"position":{"x":212.0,"y":49.0},"guid":"3fdedf92-647b-4711-ba5f-0f86b154cda0","$version":"A","$type":"Bolt.Self","$id":"16"},{"sourceUnit":{"$ref":"10"},"sourceKey":"target","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"f8b99517-7a23-4a22-8ca3-6409f65df7fe","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"self","destinationUnit":{"$ref":"13"},"destinationKey":"%obj","guid":"2288bc89-34b7-4acd-89f9-0fdcb5851a72","$type":"Bolt.ValueConnection"}],"$version":"A"}}}'
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":440.6054,"y":15.07632},"zoom":0.7,"elements":[{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"tag":{"$content":"Player","$type":"System.String"}},"position":{"x":19.0,"y":-40.0},"guid":"b7648df9-2044-49cf-a5b3-0e70d25fc255","$version":"A","$type":"Bolt.SuperUnit","$id":"10"},{"kind":"Object","defaultValues":{"name":{"$content":"HasApple","$type":"System.String"},"object":null},"position":{"x":386.0,"y":-91.0},"guid":"46293ca8-ec27-4540-8451-60b3ad7208f0","$version":"A","$type":"Bolt.SetVariable","$id":"13"},{"type":"System.Boolean","value":{"$content":true,"$type":"System.Boolean"},"defaultValues":{},"position":{"x":161.0,"y":143.0},"guid":"434072ef-eab3-4af3-b05f-b0093b708100","$version":"A","$type":"Bolt.Literal","$id":"15"},{"chainable":false,"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":null},"position":{"x":690.0,"y":-75.0},"guid":"d1d010c6-cfe0-43f4-9825-d8c112e92177","$version":"A","$type":"Bolt.InvokeMember","$id":"17"},{"defaultValues":{},"position":{"x":522.0,"y":69.0},"guid":"ab25b6ca-4547-4294-b1a4-fe89c774ecf6","$version":"A","$type":"Bolt.Self","$id":"20"},{"sourceUnit":{"$ref":"10"},"sourceKey":"target","destinationUnit":{"$ref":"13"},"destinationKey":"assign","guid":"ba1f0309-7eac-428d-9bc6-14c31b8b9cd1","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"assigned","destinationUnit":{"$ref":"17"},"destinationKey":"enter","guid":"ba9125c7-f3c7-4c1f-a7d7-515537aa3a24","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"10"},"sourceKey":"object","destinationUnit":{"$ref":"13"},"destinationKey":"object","guid":"fb80daac-ad26-4812-ae98-fb582f36a541","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"output","destinationUnit":{"$ref":"13"},"destinationKey":"input","guid":"76bef3b0-270e-4293-a5e3-826a19855e05","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"self","destinationUnit":{"$ref":"17"},"destinationKey":"%obj","guid":"8ae9cfb0-b572-4781-8e37-1f186016a198","$type":"Bolt.ValueConnection"}],"$version":"A"}}}'
     _objectReferences:
     - {fileID: 11400000, guid: 3795a5e7afd836d46a60366ef9bdca5c, type: 2}
 --- !u!114 &945846627
@@ -601,6 +602,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &945846630
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945846625}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.48}
+    newSize: {x: 0.48, y: 0.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.48, y: 0.48}
+  m_EdgeRadius: 0
 --- !u!1 &981668368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1290,10 @@ PrefabInstance:
     - target: {fileID: 868218693, guid: 9fab65f3a396eaf4fb2c796172ea03ca, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 868218694, guid: 9fab65f3a396eaf4fb2c796172ea03ca, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"Speed","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"Jump","value":{"$content":12.0,"$type":"System.Single"},"$version":"A"},{"name":"HasKey","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Health","value":{"$content":3,"$type":"System.Int32"},"$version":"A"},{"name":"HasProjectiles","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"HadApple","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 868218700, guid: 9fab65f3a396eaf4fb2c796172ea03ca, type: 3}
       propertyPath: m_Enabled
